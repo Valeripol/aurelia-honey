@@ -1,0 +1,1 @@
+AURELIA: desktop and mobile scroll-frames preserved. Mobile frames mobile-frames/m_001.webp ... m_121.webp. Intro loader has 4-second safety fallback. Resize across 760px reloads page so appropriate video is chosen. Open via Live Server, not file://.

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurelia Honey Company</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.css">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="loader" id="loader"><img class="loader-logo" src="images/aurelia-logo.png" alt="AURELIA Honey Company"><span class="loader-caption">NATURE IN EVERY DROP</span></div>
+<header class="nav">
+  <nav><a href="#flavors">Shop</a><a href="#story">Our Story</a><a href="#flavors">Process</a></nav>
+  <a class="logo" href="#hero" aria-label="AURELIA — Home"><img src="images/aurelia-logo.png" alt="AURELIA Honey Company"></a>
+  <nav class="r"><a href="#end">Journal</a><a href="#end">Contact</a></nav>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span><span></span></button>
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation"><a href="#flavors">Shop</a><a href="#story">Our Story</a><a href="#flavors">Process</a><a href="#end">Journal</a><a href="#end">Contact</a></nav>
+</header>
+
+<div class="hero" id="hero"><div class="stage">
+  <canvas id="canvas" aria-label="Cinematic bee flying across a mountain meadow"></canvas><div class="shade"></div>
+  <div class="copy c1 on"><small>Discover</small><h1>Nature<br>in Every Drop</h1><p>Pure honey from wild flowers, pristine regions and healthy bees.</p><a class="btn" href="#flavors">Explore our honey →</a></div>
+  <div class="copy c2" id="story"><small>Our story</small><h2>A Journey<br>with Purpose</h2><p>From untouched meadows to your table. Follow the path of our honey.</p></div>
+  <div class="copy c3"><small>02 · The process</small><h2>From Flower<br>to Honey</h2><p>With care, knowledge and time we turn nature's nectar into pure golden honey.</p></div>
+  <div class="scroll">Scroll</div>
+</div></div>
+
+<section class="flavors" id="flavors">
+  <svg class="trail" viewBox="0 0 1000 500" preserveAspectRatio="none"><path id="trail" d="M-20,40 C80,-10 140,170 170,250 S330,390 500,270 S800,110 830,250 S950,340 1020,210" fill="none" stroke="#c98a2b" stroke-width="2" stroke-dasharray="6 9"/></svg>
+  <div class="bee" id="bee"><svg viewBox="0 0 60 44"><ellipse class="w" cx="24" cy="12" rx="12" ry="7" fill="#fff" opacity=".7"/><ellipse class="w" cx="36" cy="12" rx="12" ry="7" fill="#fff" opacity=".7"/><ellipse cx="30" cy="28" rx="16" ry="11" fill="#e8a317"/><path d="M24 18v21M31 17v23M38 19v19" stroke="#2b2118" stroke-width="4"/><circle cx="47" cy="27" r="6" fill="#2b2118"/></svg></div>
+  <small class="reveal">Our honey</small><h2 class="reveal">Three Unique Flavors</h2><p class="sub reveal">Same pure nature. Different stories.</p>
+  <div class="cards" aria-label="Our honey collection">
+    <article class="card"><img src="images/wildflower.webp" alt="Wildflower Honey"><h3>Wildflower Honey</h3><p>A delicate, floral taste from mountain meadows.</p></article>
+    <article class="card"><img src="images/acacia.webp" alt="Acacia Honey"><h3>Acacia Honey</h3><p>Light, smooth and naturally sweet.</p></article>
+    <article class="card"><img src="images/forest.webp" alt="Forest Honey"><h3>Forest Honey</h3><p>Rich and intense with woody notes.</p></article>
+  </div>
+</section>
+
+<footer class="end" id="end"><div class="footer-bees" aria-hidden="true"></div><div class="footer-content"><small class="footer-kicker reveal">AURELIA HONEY COMPANY</small><h2 class="reveal">Taste the Difference</h2><p class="reveal">Bring a piece of nature to your home.</p><a class="btn light reveal" href="#flavors">Shop now →</a></div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>const TOTAL = 121;</script>
+<script src="script.js"></script>
+</body></html>
